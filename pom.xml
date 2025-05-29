@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cs</groupId>
+  <artifactId>Djl</artifactId>
+  <version>>0.0.1-SNAPSHOT</version>
+<dependencies>
+    <dependency>
+        <groupId>ai.djl</groupId>
+        <artifactId>api</artifactId>
+        <version>0.28.0</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.djl</groupId>
+        <artifactId>basicdataset</artifactId>
+        <version>0.28.0</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.djl</groupId>
+        <artifactId>model-zoo</artifactId>
+        <version>0.28.0</version>
+    </dependency>
+    <dependency>
+        <groupId>ai.djl.pytorch</groupId>
+        <artifactId>pytorch-engine</artifactId>
+        <version>0.28.0</version>
+        <scope>runtime</scope>
+    </dependency>
+    <!-- Try without specifying classifier, let DJL auto-detect -->
+    <dependency>
+        <groupId>ai.djl.pytorch</groupId>
+        <artifactId>pytorch-native-cpu</artifactId>
+        <version>1.13.1</version>
+        <scope>runtime</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.36</version>
+    </dependency>
+</dependencies>
+
+</project>
