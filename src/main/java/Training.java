@@ -24,7 +24,7 @@ import ai.djl.training.util.ProgressBar;
 import ai.djl.translate.TranslateException;
 
 
-public class Example {
+public class Training {
 
 	public static void main(String[] args) throws IOException, TranslateException {
         long inputSize = 28*28;
@@ -38,7 +38,6 @@ public class Example {
         block.add(Activation::relu);
         block.add(Linear.builder().setUnits(outputSize).build());
  
-        System.out.println("123");
  
         int batchSize = 32;
         Mnist mnist = Mnist.builder().setSampling(batchSize, true).build();

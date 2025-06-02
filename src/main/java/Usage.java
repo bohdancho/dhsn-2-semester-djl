@@ -23,7 +23,7 @@ import ai.djl.translate.TranslatorContext;
 public class Usage {
 
 	public static void main(String[] args) throws IOException, MalformedModelException, TranslateException {
-		Image img = ImageFactory.getInstance().fromUrl("https://b2q7zb733u.ufs.sh/f/O3YjbOo3Nsti5piDbr4yLv9tSU7ow8JKQ3sPDZCHr1pERhgW");
+		Image img = ImageFactory.getInstance().fromUrl("https://storage.googleapis.com/kagglesdsdata/datasets/2265389/3799619/mnist_png/test/8/1033.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20250602%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250602T173233Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=96d108cf9697780cecec87d16ef377f7d579e073c21c46dd1e38142f74402d046d7c39d0a4c5913906cebb4e853d2180e622f442b1ce79cbf1ac867759a9c1a01d9923d3be9b3c1e709940698c968502d6f3ef6879cfbaabd1ae074128c289477fe8e769296a0f818e69071b159bbf567a3f3f369398e39b7b6a805f1cd09eab63b269fcfbb8bf939f7da3e554c057214dfd55a79fe8ebe0afd1dd5bf3cf53836c8676875c1a89056f74337fa8a9240fc2dd0219535f7d4f7bc597397dfdfd7d29a0f8a3c67a66f74013b8b11dabf4e541abb190cabd4f22c714de5b2c5cf343439547e25d28bb27cdd528052bbcb86b74ccaef0e247c7ca3c5a9aeba1f83273");
 		img.getWrappedImage();
 		
 		Path modelDir = Paths.get("build/mlp");
