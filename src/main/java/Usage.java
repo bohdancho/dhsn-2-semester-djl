@@ -23,14 +23,14 @@ import ai.djl.translate.TranslatorContext;
 public class Usage {
 
 	public static void main(String[] args) throws IOException, MalformedModelException, TranslateException {
-		Image img = ImageFactory.getInstance().fromUrl("https://b2q7zb733u.ufs.sh/f/O3YjbOo3NstiocmgB0TX41miOshvGUyRx8BJauTkgtrCpf0o");
-		img.getWrappedImage();
+		Image img = ImageFactory.getInstance().fromUrl("");
 		
 		Path modelDir = Paths.get("build/mlp");
 		Model model = Model.newInstance("mlp");
 		model.setBlock(new Mlp(28 * 28, 10, new int[] {128, 64}));
 		model.load(modelDir);
 		
+		// Preprocessing
 		Translator<Image, Classifications> translator = new Translator<Image, Classifications>() {
 
 		    @Override
@@ -58,7 +58,6 @@ public class Usage {
 		Classifications classifications = predictor.predict(img);
 
 		System.out.println(classifications);
-
 	}
 
 }

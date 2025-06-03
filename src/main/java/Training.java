@@ -57,7 +57,7 @@ public class Training {
 		trainer.initialize(new Shape(1, 28 * 28));
  
 		// Deep learning is typically trained in epochs where each epoch trains the model on each item in the dataset once.
-		int epoch = 30;
+		int epoch = 200;
  
 		EasyTrain.fit(trainer, epoch, mnist, null);
 		Path modelDir = Paths.get("build/mlp");
