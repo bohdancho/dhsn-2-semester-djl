@@ -1,1 +1,1 @@
-Small project for uni with DJL.
+Small group project for uni with DJL.
